@@ -1,0 +1,10 @@
+Usar ferramenta psql do postgresql;
+criar usuario;
+    create user fabio with encrypted password 'ffs@123';
+criar banco de dados;
+    create database portaria;
+configurar privilegios;
+    grant all privileges on database portaria to  fabio;
+
+postgresql usando docker
+    docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=senha postgres 
